@@ -235,6 +235,9 @@ interface CodeValueType extends BaseValueType {
 interface CollectionValueType extends ContentValueType {
   type: "collection_view";
 }
+interface CollectionViewPageType extends ContentValueType {
+  type: "collection_view_page";
+}
 
 interface TableGalleryType extends BaseValueType {
   type: "gallery";
@@ -292,7 +295,8 @@ export type BlockValueType =
   | BookmarkValueType
   | ToggleValueType
   | CollectionValueType
-  | TweetType;
+  | TweetType
+  | CollectionViewPageType;
 
 export type BlockValueTypeKeys = BlockValueType["type"];
 

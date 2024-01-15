@@ -515,6 +515,15 @@ export const Block: React.FC<Block> = props => {
             <div>{children}</div>
           </details>
         );
+      case "collection_view_page":
+        return (
+          <div>
+            <h3 className="notion-h3">
+              {renderChildText(block.collection?.title!)}
+            </h3>
+            {children}
+          </div>
+        );
       default:
         if (process.env.NODE_ENV !== "production") {
           console.log("Unsupported type " + block?.value?.type);
