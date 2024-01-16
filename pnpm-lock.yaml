@@ -10,6 +10,9 @@ dependencies:
     version: 1.29.0
 
 devDependencies:
+  '@types/node':
+    specifier: ^20.11.4
+    version: 20.11.4
   '@types/prismjs':
     specifier: ^1.26.3
     version: 1.26.3
@@ -33,7 +36,7 @@ devDependencies:
     version: 3.5.0
   tsdx:
     specifier: ^0.14.1
-    version: 0.14.1
+    version: 0.14.1(@types/node@20.11.4)
   tslib:
     specifier: ^2.6.2
     version: 2.6.2
@@ -1646,20 +1649,20 @@ packages:
   /@types/fs-extra@8.1.5:
     resolution: {integrity: sha512-0dzKcwO+S8s2kuF5Z9oUWatQJj5Uq/iqphEtE3GQJVRRYm/tD1LglU2UnXi2A8jLq5umkGouOXOR9y0n613ZwQ==}
     dependencies:
-      '@types/node': 20.11.2
+      '@types/node': 20.11.4
     dev: true
 
   /@types/glob@7.2.0:
     resolution: {integrity: sha512-ZUxbzKl0IfJILTS6t7ip5fQQM/J3TJYubDm3nMbgubNNYS62eXeUpoLUC8/7fJNiFYHTrGPQn7hspDUzIHX3UA==}
     dependencies:
       '@types/minimatch': 5.1.2
-      '@types/node': 20.11.2
+      '@types/node': 20.11.4
     dev: true
 
   /@types/graceful-fs@4.1.9:
     resolution: {integrity: sha512-olP3sd1qOEe5dXTSaFvQG+02VdRXcdytWLAZsAq1PecU8uqQAhkrnbli7DagjtXKW/Bl7YJbUsa8MPcuc8LHEQ==}
     dependencies:
-      '@types/node': 20.11.2
+      '@types/node': 20.11.4
     dev: true
 
   /@types/istanbul-lib-coverage@2.0.6:
@@ -1698,8 +1701,8 @@ packages:
     resolution: {integrity: sha512-K0VQKziLUWkVKiRVrx4a40iPaxTUefQmjtkQofBkYRcoaaL/8rhwDWww9qWbrgicNOgnpIsMxyNIUM4+n6dUIA==}
     dev: true
 
-  /@types/node@20.11.2:
-    resolution: {integrity: sha512-cZShBaVa+UO1LjWWBPmWRR4+/eY/JR/UIEcDlVsw3okjWEu+rB7/mH6X3B/L+qJVHDLjk9QW/y2upp9wp1yDXA==}
+  /@types/node@20.11.4:
+    resolution: {integrity: sha512-6I0fMH8Aoy2lOejL3s4LhyIYX34DPwY8bl5xlNjBvUEk8OHrcuzsFt+Ied4LvJihbtXPM+8zUqdydfIti86v9g==}
     dependencies:
       undici-types: 5.26.5
     dev: true
@@ -1741,7 +1744,7 @@ packages:
   /@types/resolve@1.17.1:
     resolution: {integrity: sha512-yy7HuzQhj0dhGpD8RLXSZWEkLsV9ibvxvi6EiJ3bkqLAO1RGo0WbkWQiwpRlSFymTJRz0d3k5LM3kkx8ArDbLw==}
     dependencies:
-      '@types/node': 20.11.2
+      '@types/node': 20.11.4
     dev: true
 
   /@types/scheduler@0.16.8:
@@ -6001,7 +6004,7 @@ packages:
       is-plain-object: 3.0.1
     dev: true
 
-  /rollup-plugin-sourcemaps@0.6.3(rollup@1.32.1):
+  /rollup-plugin-sourcemaps@0.6.3(@types/node@20.11.4)(rollup@1.32.1):
     resolution: {integrity: sha512-paFu+nT1xvuO1tPFYXGe+XnQvg4Hjqv/eIhG8i5EspfYYPBKL57X7iVbfv55aNVASg3dzWvES9dmWsL2KhfByw==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
@@ -6012,6 +6015,7 @@ packages:
         optional: true
     dependencies:
       '@rollup/pluginutils': 3.1.0(rollup@1.32.1)
+      '@types/node': 20.11.4
       rollup: 1.32.1
       source-map-resolve: 0.6.0
     dev: true
@@ -6056,7 +6060,7 @@ packages:
     hasBin: true
     dependencies:
       '@types/estree': 1.0.5
-      '@types/node': 20.11.2
+      '@types/node': 20.11.4
       acorn: 7.4.1
     dev: true
 
@@ -6751,7 +6755,7 @@ packages:
       strip-bom: 3.0.0
     dev: true
 
-  /tsdx@0.14.1:
+  /tsdx@0.14.1(@types/node@20.11.4):
     resolution: {integrity: sha512-keHmFdCL2kx5nYFlBdbE3639HQ2v9iGedAFAajobrUTH2wfX0nLPdDhbHv+GHLQZqf0c5ur1XteE8ek/+Eyj5w==}
     engines: {node: '>=10'}
     hasBin: true
@@ -6802,7 +6806,7 @@ packages:
       progress-estimator: 0.2.2
       regenerator-runtime: 0.13.11
       rollup: 1.32.1
-      rollup-plugin-sourcemaps: 0.6.3(rollup@1.32.1)
+      rollup-plugin-sourcemaps: 0.6.3(@types/node@20.11.4)(rollup@1.32.1)
       rollup-plugin-terser: 5.3.1(rollup@1.32.1)
       rollup-plugin-typescript2: 0.27.3(rollup@1.32.1)(typescript@3.9.10)
       sade: 1.8.1

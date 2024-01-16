@@ -1,5 +1,5 @@
 {
-  "version": "0.10.0",
+  "version": "0.12.13",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -8,7 +8,7 @@
     "src"
   ],
   "engines": {
-    "node": ">=10"
+    "node": ">=20"
   },
   "scripts": {
     "start": "tsdx watch",
@@ -18,9 +18,8 @@
     "prepare": "tsdx build"
   },
   "author": {
-    "name": "Tobias Lins",
-    "email": "me@tobi.sh",
-    "url": "https://tobi.sh"
+    "name": "watsuyo",
+    "url": "https://watsuyo.dev"
   },
   "husky": {
     "hooks": {
@@ -33,22 +32,23 @@
     "trailingComma": "none"
   },
   "bugs": {
-    "url": "https://github.com/splitbee/react-notion/issues"
+    "url": "https://github.com/watsuyo/react-notion/issues"
   },
-  "homepage": "https://github.com/splitbee/react-notion#readme",
+  "homepage": "https://github.com/watsuyo/react-notion#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/splitbee/react-notion.git"
+    "url": "https://github.com/watsuyo/react-notion.git"
   },
-  "name": "react-notion",
+  "name": "@watsuyo/react-notion",
   "module": "dist/react-notion.esm.js",
   "peerDependencies": {
-    "react": ">=16"
+    "react": ">=18"
   },
   "devDependencies": {
     "@types/prismjs": "^1.26.3",
     "@types/react": "^18.2.48",
     "@types/react-dom": "^18.2.18",
+    "@types/node": "^20.11.4",
     "husky": "^8.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

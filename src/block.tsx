@@ -99,6 +99,7 @@ interface Block {
 export const Block: React.FC<Block> = props => {
   const {
     block,
+    // @ts-ignore
     children,
     level,
     fullPage,
@@ -545,6 +546,7 @@ export const Block: React.FC<Block> = props => {
       <CustomComponent
         renderComponent={renderComponent}
         blockMap={blockMap}
+        // @ts-ignore
         blockValue={blockValue as BlockValueProp<typeof blockValue.type>}
         level={level}
       >

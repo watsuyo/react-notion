@@ -41,6 +41,7 @@ export const NotionRenderer: React.FC<NotionRendererProps> = ({
   }
 
   return (
+    // @ts-ignore
     <Block
       key={id}
       level={level}
