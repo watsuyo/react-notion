@@ -326,6 +326,15 @@ export const Block: React.FC<Block> = props => {
       case "code": {
         if (blockValue.properties.title) {
           const content = blockValue.properties.title[0][0];
+          if (content.includes("id=\"hubspot\"") && content.includes("data-formid")) {
+            const formId = content.split("data-formid=\"")[1].split("\"")[0];
+            return (
+              <div className="hubspot-form">
+                <script src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
+                <div className="meetings-iframe-container" data-src={`https://meetings.hubspot.com/${formId}`}></div>
+              </div>
+            );
+          }
           const language = blockValue.properties.language[0][0];
           return (
             <Code
