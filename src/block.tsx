@@ -525,6 +525,16 @@ export const Block: React.FC<Block> = props => {
             {children}
           </div>
         );
+      case "table":
+        return (
+          <div>
+            <h3 className="notion-h3">
+              {renderChildText(blockValue.properties.title)}
+            </h3>
+            {children}
+          </div>
+        );
+    
       default:
         if (process.env.NODE_ENV !== "production") {
           console.log("Unsupported type " + block?.value?.type);

@@ -238,6 +238,9 @@ interface CollectionValueType extends ContentValueType {
 interface CollectionViewPageType extends ContentValueType {
   type: "collection_view_page";
 }
+interface TableType extends BaseValueType {
+  type: "table";
+}
 
 interface TableGalleryType extends BaseValueType {
   type: "gallery";
@@ -296,7 +299,8 @@ export type BlockValueType =
   | ToggleValueType
   | CollectionValueType
   | TweetType
-  | CollectionViewPageType;
+  | CollectionViewPageType
+  | TableType;
 
 export type BlockValueTypeKeys = BlockValueType["type"];
 
