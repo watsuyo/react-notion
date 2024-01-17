@@ -529,7 +529,12 @@ export const Block: React.FC<Block> = props => {
         return (
           <div>
             <h3 className="notion-h3">
-              {renderChildText(blockValue.properties.title)}
+              {
+                blockValue.content?.map((contentId) => {
+                  const content = blockMap[contentId];
+                  return renderChildText(content?.value?.properties?.title);
+                })
+              }
             </h3>
             {children}
           </div>
