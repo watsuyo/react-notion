@@ -32,15 +32,15 @@
     "trailingComma": "none"
   },
   "bugs": {
-    "url": "https://github.com/watsuyo/react-notion/issues"
+    "url": "https://github.com/watsuyo/react-notion-sushi/issues"
   },
-  "homepage": "https://github.com/watsuyo/react-notion#readme",
+  "homepage": "https://github.com/watsuyo/react-notion-sushi#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/watsuyo/react-notion.git"
+    "url": "https://github.com/watsuyo/react-notion-sushi.git"
   },
-  "name": "@watsuyo/react-notion",
-  "module": "dist/react-notion.esm.js",
+  "name": "@watsuyo/react-notion-sushi",
+  "module": "dist/react-notion-sushi.esm.js",
   "peerDependencies": {
     "react": ">=18"
   },
